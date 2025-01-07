@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 17:14:36 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/07 16:56:42 by yevkahar         ###   ########.fr       */
+/*   Created: 2024/12/02 17:35:24 by yevkahar          #+#    #+#             */
+/*   Updated: 2025/01/07 17:02:40 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FTPRINTF_H
-# define FTPRINTF_H
+#include "ft_printf.h"
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdarg.h>
+int	ft_putptr(unsigned long long n)
+{
+	int	result;
 
-int		ft_putchar(int c);
-int		ft_putstr(char *s);
-int		ft_printf(const char *, ...);
-int		ft_putnbr(int n);
-int		ft_putptr(unsigned long long n);
+	result = 0;
+	result += ft_putstr("0x");
+	result += ft_putthexlow(n);
+	return (result);
+}
 
-
-
-
-
-
-
-
-# endif
+// 0x499602d2

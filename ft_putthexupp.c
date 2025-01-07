@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putthexupp.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 17:14:36 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/07 16:56:42 by yevkahar         ###   ########.fr       */
+/*   Created: 2025/01/07 15:40:09 by yevkahar          #+#    #+#             */
+/*   Updated: 2025/01/07 17:34:40 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FTPRINTF_H
-# define FTPRINTF_H
+#include "ft_printf.h"
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdarg.h>
+int	putthexupp(unsigned long long n)
+{
+	int		result;
 
-int		ft_putchar(int c);
-int		ft_putstr(char *s);
-int		ft_printf(const char *, ...);
-int		ft_putnbr(int n);
-int		ft_putptr(unsigned long long n);
+	result = 0;
+	if (n > 16)
+		result += ft_putthexupp(n / 16);
+	result += ft_putchar(HU[n % 16]);
+	return (result);
+}
 
-
-
-
-
-
-
-
-# endif
+// HU = "0123456789ABCDEF"

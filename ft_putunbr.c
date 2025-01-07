@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnum.c                                        :+:      :+:    :+:   */
+/*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 19:09:37 by yevkahar          #+#    #+#             */
-/*   Updated: 2024/12/02 19:10:23 by yevkahar         ###   ########.fr       */
+/*   Created: 2025/01/07 15:40:12 by yevkahar          #+#    #+#             */
+/*   Updated: 2025/01/07 17:36:19 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	ft_putnum(int n)
+int	ft_putunbr(unsigned int n)
 {
 	
 }
