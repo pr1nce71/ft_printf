@@ -6,13 +6,13 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 15:40:09 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/07 17:34:40 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/07 17:45:03 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	putthexupp(unsigned long long n)
+int	ft_putthexupp(unsigned long long n)
 {
 	int		result;
 

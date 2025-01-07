@@ -6,13 +6,13 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 17:42:56 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/07 16:40:25 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/07 17:44:00 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_convert(char c, va_list arg)
+int	ft_convert(char c, va_list arg)
 {
 	if (c == 'c')
 		return (ft_putchar(va_arg(arg, int)));
@@ -37,7 +37,7 @@ int	ft_printf(const char *format, ...)
 {
 	va_list	argp;
 	int		count;
-	int 	i;
+	int		i;
 
 	count = 0;
 	i = 0;
