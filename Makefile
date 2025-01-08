@@ -6,23 +6,19 @@
 #    By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/02 17:12:53 by yevkahar          #+#    #+#              #
-#    Updated: 2025/01/07 17:01:48 by yevkahar         ###   ########.fr        #
+#    Updated: 2025/01/08 15:13:19 by yevkahar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=   ft_printf.a
+NAME	=   libftprintf.a
 SRCS	=	ft_printf.c \
 			ft_putptr.c \
 			ft_putchar.c \
 			ft_putstr.c \
 			ft_putnbr.c \
 			ft_putunbr.c \
-			ft_putthexlow.c \
-			ft_putthexupp.c \
-			
-
-
-
+			ft_puthexlow.c \
+			ft_puthexupp.c \
 
 
 OBJS	= $(SRCS:.c=.o)
@@ -36,7 +32,8 @@ INCS	= .
 	$(CC) $(FLAGS) -c $< -o $(<:.c=.o) -I$(INCS)
 
 $(NAME): $(OBJS)
-	$(LIBC) $(NAME) $(OBJS) 
+	$(LIBC) $(NAME) $(OBJS)
+	
 
 all: $(NAME)
 
@@ -47,3 +44,5 @@ fclean: clean
 	$(RM) $(NAME) $(bonus)
 
 re: fclean all
+
+.PHONY: all clean fclean re .c.o

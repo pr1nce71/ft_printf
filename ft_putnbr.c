@@ -6,7 +6,7 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 19:09:37 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/08 13:32:57 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/08 15:06:40 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_putnbr(int n)
 		n = -n;
 	}
 	if (n > 9)
-		result += ft_putchar(n / 10);
+		result += ft_putnbr(n / 10);
 	result += ft_putchar(n % 10 + 48);
 	return (result);
 }

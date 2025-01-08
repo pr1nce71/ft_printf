@@ -6,7 +6,7 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 17:22:21 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/08 13:34:22 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/08 15:06:40 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_putstr(char *s)
 	size_t	i;
 
 	i = 0;
-	if (s == NULL)
+	if (!s)
 	{
 		write (1, "(null)", 6);
 		return (6);
@@ -27,8 +27,8 @@ int	ft_putstr(char *s)
 		while (s[i] != '\0')
 		{
 			write (1, &s[i], 1);
-			return (i);
+			i++;
 		}
-		return (0);
+		return (i);
 	}
 }

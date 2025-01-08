@@ -6,7 +6,7 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 17:14:36 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/08 13:34:42 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/08 15:15:47 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,12 @@
 # include <stdlib.h> //malloc, free
 # include <stdarg.h> //va_...
 
-int		ft_printf(const char *format, ...);
-//main function
+int		ft_printf(const char *format, ...);//main function
 int		ft_putchar(int c);
-//for "%c" 
-int		ft_putstr(char *s);
-//for "%s" strings
-int		ft_putptr(unsigned long long n);
-//for "%p" pointers
-int		ft_putnbr(int n);
-//for "%i" & "%d" digits 
-int		ft_putunbr(unsigned int n);
-//for "%u" unsigned nums
-int		ft_putthexlow(unsigned long long n);
-//for "%x" 
-int		ft_putthexupp(unsigned long long n);
-//for "%X"
+int		ft_putstr(char *s);//for "%s" strings
+int		ft_putnbr(int n);//for "%i" & "%d" digits
+int		ft_putunbr(unsigned int n);//for "%u" unsigned nums
+int		ft_puthexlow(unsigned long long n);//for "%x"
+int		ft_puthexupp(unsigned long long n);//for "%X"
+int		ft_putptr(unsigned long long n);//for "%p" pointers
 #endif
