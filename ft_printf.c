@@ -6,7 +6,7 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 17:42:56 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/07 17:44:00 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/08 13:06:01 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_convert(char c, va_list arg)
 	else if (c == 'u')
 		return (ft_putunbr(va_arg(arg, unsigned int)));
 	else if (c == 'x')
-		return (ft_puthexlow(va_arg(arg, unsigned int)));
+		return (ft_putthexlow(va_arg(arg, unsigned int)));
 	else if (c == 'X')
-		return (ft_puthexupp(va_arg(arg, unsigned int)));
+		return (ft_putthexupp(va_arg(arg, unsigned int)));
 	else if (c == '%')
 		return (ft_putchar('%'));
 	return (0);

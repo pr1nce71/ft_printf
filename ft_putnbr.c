@@ -6,11 +6,11 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 19:09:37 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/07 16:52:58 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/08 13:32:57 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int n)
 {
