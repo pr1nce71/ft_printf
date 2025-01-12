@@ -6,7 +6,7 @@
 /*   By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 17:35:24 by yevkahar          #+#    #+#             */
-/*   Updated: 2025/01/08 15:13:52 by yevkahar         ###   ########.fr       */
+/*   Updated: 2025/01/12 18:52:42 by yevkahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_putptr(unsigned long long n)
 
 	result = 0;
 	if (n == 0)
-		result += ft_putstr("0x0");
+		result += ft_putstr("(nil)");
 	else
 	{
 		result += ft_putstr("0x");

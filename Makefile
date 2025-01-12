@@ -6,7 +6,7 @@
 #    By: yevkahar <yevkahar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/02 17:12:53 by yevkahar          #+#    #+#              #
-#    Updated: 2025/01/08 15:13:19 by yevkahar         ###   ########.fr        #
+#    Updated: 2025/01/12 19:00:22 by yevkahar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRCS	=	ft_printf.c \
 			ft_putunbr.c \
 			ft_puthexlow.c \
 			ft_puthexupp.c \
+			main.c 
 
 
 OBJS	= $(SRCS:.c=.o)
